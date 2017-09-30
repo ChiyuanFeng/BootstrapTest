@@ -13,4 +13,10 @@ $(document).ready(function(){
         }
 
     });
+    $("#myReserveButton").click(function(){
+        $("#reserveModal").modal();
+    });
+    $("#myLoginButton").click(function(){
+        $("#loginModal").modal();
+    });
 });

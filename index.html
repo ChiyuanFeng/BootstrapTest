@@ -32,8 +32,8 @@
             <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
           </ul>
 
-          <span class="navbar-text">
-              <a data-toggle="modal" data-target="#loginModal">
+          <span class="navbar-text" id="myLoginButton">
+              <a>
                 <span class="fa fa-sign-in"></span> Login</a>
           </span>
         </div>
@@ -144,11 +144,13 @@
                 </div>
 
               </form>
+
+              <div>
+                  <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-primary btn-sm">Reserve</button>
+              </div>
           </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
-              <button type="submit" class="btn btn-primary btn-sm">Reserve</button>
-          </div>
+          
           </div>
         </div>
     </div>
@@ -168,10 +170,8 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
 
-                <div data-toggle="modal" data-target="#reserveModal" class="col-12 col-sm align-self-center">
-                  <a role="button" class="btn btn-block btn-sm btn-warning"
-                      data-html="true"
-                      data-placement="bottom">Reserve Table</a>
+                <div id="myReserveButton"  class="col-12 col-sm align-self-center">
+                  <a role="button" class="btn btn-block btn-sm btn-warning">Reserve Table</a>
                 </div>
             </div>
         </div>
